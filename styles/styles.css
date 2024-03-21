@@ -575,7 +575,7 @@ a{
 }
 @media (max-width: 1024px){
     *.bigPic{
-        width: 100vw;
+        width: 90vw;
     }
 }
 *.info1{

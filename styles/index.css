@@ -260,7 +260,8 @@
     & .shop{
         position: absolute;
         bottom: 220px;
-        height: 400px;
+        max-width: 400px;
+        width: 50vw;
         aspect-ratio: 1 / 1;
         border-radius: 100%;
         background-color: transparent;
@@ -273,7 +274,7 @@
         &::before{
             content: "";
             position: absolute;
-            height: 360px;
+            height: 90%;
             aspect-ratio: 1 / 1;
             border-radius: 100%;
             background-color: var(--col-2-);
@@ -282,14 +283,15 @@
         &::after{
             content: "";
             position: absolute;
-            height: 100px;
-            width: 400px;
+            height: 20%;
+            width: 100%;
             background-color: var(--col-1-);
             animation: rot 3s linear infinite;
         }
     }
     & i{
         position: relative;
+        font-size: 200px;
         font-weight: 300;
         color: var(--col-1-);
         display: flex;
@@ -346,10 +348,10 @@
                 color: var(--col-2-);
                 
                 &.o{
-                    margin: -200px -200px 0 0;
+                    margin: -40% -60% 0 0;
                 }
                 &.t{
-                    margin: 0 0 -270px 0;
+                    margin: 0 0 -80% 0;
                     z-index: 10;
                 }
             }
@@ -667,7 +669,7 @@
         & .f{
 
             & .wrapper{
-                height: 450px;
+                height: auto;
         
                 & .feat{
                     height: 400px;
