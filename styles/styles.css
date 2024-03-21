@@ -38,6 +38,7 @@ html{
     height: auto;
     font-size: 13px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     background-color: var(--col-1-);
