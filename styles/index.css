@@ -223,16 +223,6 @@
     gap: 50px;
 
     & .bigPic{
-        flex: none;
-        position: relative;
-        width: 980px;
-        aspect-ratio: 16 / 9;
-        background-color: var(--col-5-);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
 
         & img{
             height: 100%;
