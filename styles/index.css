@@ -19,19 +19,10 @@
     gap: 50px;
 
     & .bigPic{
-        flex: none;
-        position: relative;
-        width: 980px;
-        aspect-ratio: 16 / 8;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
 
         & img{
             rotate: -90deg;
-            height: 970px;
+            height: 200%;
         }
     }
 }
@@ -191,17 +182,8 @@
         }
     }
     & .bigPic{
-        flex: none;
-        position: relative;
         margin-top: -30px;
-        width: 980px;
-        aspect-ratio: 16 / 9;
         background-color: var(--col-5-);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        overflow: hidden;
 
         & img{
             width: 130%;
@@ -269,19 +251,10 @@
     gap: 50px;
 
     & .bigPic{
-        flex: none;
-        position: relative;
-        width: 980px;
-        aspect-ratio: 16 / 8;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
 
         & img{
             rotate: -90deg;
-            height: 970px;
+            height: 200%;
         }
     }
     & .shop{
@@ -514,7 +487,7 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 overflow: hidden;
-                gap: 50px;
+                gap: 10px;
 
                 scale: 0.9;
                 filter: opacity(50%);
@@ -687,8 +660,6 @@
             }
         }
     }
-
-    
 }
 @media (max-width: 768px){
     #features{
@@ -699,7 +670,7 @@
                 height: 450px;
         
                 & .feat{
-                    height: 350px;
+                    height: 400px;
                     width: 300px;
     
                     scale: 0.9;
@@ -754,12 +725,12 @@
         }
     }
     @keyframes whide{
-        from{width: 50vw;}
-        to{width: 50vw;}
+        from{width: 100vw;}
+        to{width: 100vw;}
     }
     @keyframes rot{
         from{rotate: 0deg;}
-        to{rotate: 0deg;}
+        to{rotate: 360deg;}
     }
     @keyframes zoom{
         from{scale: 1;}

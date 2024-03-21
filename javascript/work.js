@@ -141,7 +141,13 @@ function swichFeature(num){
 
     for(var i = 0; i < featNum; i++){
         Fs[i].classList.remove("active");
-        Fs[i].style.marginLeft = "-550px";
+        
+        if(window.innerWidth > 767){
+            Fs[i].style.marginLeft = "-550px";
+        }
+        else{
+            Fs[i].style.marginLeft = "-400px";
+        }
     }
 
     Fs[featNum].classList.add("active");
