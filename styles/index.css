@@ -21,7 +21,6 @@
     & .bigPic{
 
         & img{
-            rotate: -90deg;
             height: 200%;
         }
     }
@@ -243,7 +242,6 @@
     & .bigPic{
 
         & img{
-            rotate: -90deg;
             height: 200%;
         }
     }
