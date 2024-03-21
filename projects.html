@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+    <section id="cookieBanner">
+        <h4 class="info">Cookies</h4>
+        <h6 class="info">This website uses cookies to enable important user elements for you. Please read our privacy and cookie policies
+            carefully to understand how we process your data and use cookies on this website. <br> 
+            By consenting, you agree to the use of cookies in accordance with our policies.</h6>
+        <div>
+            <button class="bt1 bSwich2" id="cookie-btn1"><h6>Allow Cookies</h6></button>
+            <button class="bt1 bSwich2" id="cookie-btn2"><h6>Only neccesary Cookies</h6></button>
+        </div>
+    </section>
+    <header id="H" class="dark">
+        <div class="logo1">
+            <h5>MAIJAN</h5>
+        </div>
+        <nav>
+            <a href="index.html" style="font-family: Kanit, sans-serif; font-size: 1.4rem; font-weight: 500;">IJ</a>
+            <a href="projects.html">Projects</a>
+            <a href="clients.html">Clients</a>
+        </nav>
+        <a href="clients.html" class="bt1 dark bSwich1" id="CB">
+            <h6>Contact</h6>
+        </a>
+    </header>
+    <div id="navigation" class="dark"></div>
+    <main id="hero" class="dark-background">
+        <article class="text">
+            <h5 class="colorFullC1 up">Projects</h5>
+            <h2 class="colorFullC1 up">Maijan</h2>
+        </article>
+    </main>
+    <main id="intro" class="dark-background">
+        <section class="information2">
+            <h3>Inspiration f&uumlr deine n&aumlchte Webseite.</h3>
+        </section>
+    </main>
+    <main id="overfiew" class="dark-background">
+        <h5>Filter</h5>
+        <button onclick="filter(1)" class="bt31"><h6>Seiten von Kunden</h6></button>
+        <button onclick="filter(2)" class="bt31"><h6>Seiten ohne Kunden</h6></button>
+        <button onclick="filter(3)" class="bt31"><h6>kein Filter</h6></button>
+    </main>
+    <main id="projects" class="dark-background">
+        <section class="project ncp active">
+            <div class="imageWrapper">
+                <img src="images/sunglasses.desctop.jpeg" alt="">
+            </div>
+            <div class="discription">
+                <h5>LOOK</h5>
+                <i class="material-symbols-outlined" style="font-size: 25px;" translate="no">person_off</i>
+            </div>
+            <h6>Ein Beistpielprojekt f&uumlr einen kleinen Shop der Sonnenbrillen verkauft.</h6>
+        </section>
+        <section class="project ncp active">
+            <div class="imageWrapper">
+                <img src="images/solar.desctop.jpeg" alt="">
+            </div>
+            <div class="discription">
+                <h5>SOLARSolution</h5>
+                <i class="material-symbols-outlined" style="font-size: 25px;" translate="no">person_off</i>
+            </div>
+            <h6>Ein Beistpielprojekt f&uumlr einen Solaranbieter.</h6>
+        </section>
+        <a href="https://eg-galabau.de/" class="project cp active">
+            <div class="imageWrapper">
+                <img src="images/eg.jpg" alt="" class="snap">
+            </div>
+            <div class="discription">
+                <h5>EG Garten- Landschaftsbau</h5>
+                <i class="material-symbols-outlined" style="font-size: 25px;" translate="no">person</i>
+            </div>
+            <h6>Ein lokaler Garten- Landschaftsbauer aus dem Kreis Kassel</h6>
+        </a>
+    </main>
+    <main id="legal" class="dark-background">
+        <section class="overfiew">
+            <button onclick="highText(0)" class="bt31"><h6>Filter</h6></button>
+        </section>
+        <section class="wrapper">
+            <div class="theme" id="info1">
+                <p>Alle Projekte die mit diesem Symbol (<i class="material-symbols-outlined" style="font-size: 10px;" translate="no">person_off</i>) gekennzeichnet sind, sind Webseiten die online nicht zu finden sind und als Bilder auf dieser Webseite abgebildet sind. Sie dienen der Veranschaulichung und der Orientierung im Bezug auf die Designrichtung der aufgeführten Projekte.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="dark-background">
+        <article class="logo">
+            <h4>MAIJAN</h4>
+            <h5>Home</h5>
+        </article>
+        <aside class="links">
+            <a href="index.html#brandIntro" class="heading">Brand identity</a>
+            <a>Farbenpatette</a>
+            <a>Schriftarten</a>
+            <a href="index.html#vibe">Vibe</a>
+            <a>Erscheinungsbild</a>
+        </aside>
+        <aside class="links">
+            <a href="index.html#webIntro" class="heading">Webseiten</a>
+            <a href="index.html#custom">Individueller code</a>
+            <a href="index.html#responsive">Responsives design</a>
+            <a href="index.html#seo">SEO</a>
+            <a href="index.html#copy">Texte</a>
+            <a href="index.html#convert">Convert Optimierung</a>
+            <a href="index.html#manageIntro">Management</a>
+        </aside>
+        <aside class="links">
+            <a href="id.html" class="heading">Rechtliches</a>
+            <a href="id.html#impressum">Impressum</a>
+            <a href="id.html#daten">Datenschutz</a>
+            <a href="id.html#bedingungen">Lieferbedingungen</a>
+        </aside>
+        <aside class="links">
+            <a class="heading">Social media</a>
+            <a href="">Instagram</a>
+            <a href="">TikTok</a>
+            <a href="">Medium</a>
+            <a href=""></a>
+        </aside>
+    </footer>
+</body>
+<script src="javascript/work.js"></script>
+<script src="javascript/cookie.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</html>

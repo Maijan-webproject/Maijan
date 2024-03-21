@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/clients.css">
+</head>
+<body>
+    <section id="cookieBanner">
+        <h4 class="info">Cookies</h4>
+        <h6 class="info">This website uses cookies to enable important user elements for you. Please read our privacy and cookie policies
+            carefully to understand how we process your data and use cookies on this website. <br> 
+            By consenting, you agree to the use of cookies in accordance with our policies.</h6>
+        <div>
+            <button class="bt1 bSwich2" id="cookie-btn1"><h6>Allow Cookies</h6></button>
+            <button class="bt1 bSwich2" id="cookie-btn2"><h6>Only neccesary Cookies</h6></button>
+        </div>
+    </section>
+    <header id="H" class="dark">
+        <div class="logo1">
+            <h5>MAIJAN</h5>
+        </div>
+        <nav>
+            <a href="index.html" style="font-family: Kanit, sans-serif; font-size: 1.4rem; font-weight: 500;">IJ</a>
+            <a href="projects.html">Projects</a>
+            <a href="clients.html">Clients</a>
+        </nav>
+        <a href="clients.html" class="bt1 dark bSwich1" id="CB">
+            <h6>Contact</h6>
+        </a>
+    </header>
+    <div id="navigation" class="dark"></div>
+    <main id="hero" class="dark-background">
+        <article class="text">
+            <h5 class="colorFullC1 up">clients</h5>
+            <h2 class="colorFullC1">MAIJAN</h2>
+        </article>
+    </main>
+    <main id="inForm">
+        <form action="https://formspree.io/f/myyqvdgd" method="POST" id="f1">
+            <article class="information2">
+                <h3>Frage deine neue Webseite an.</h3>
+                <h5>Hast du eine Idee?</h5>
+            </article>
+            <article class="info2 topSpace up">
+                <h4>Deine Firma</h4>
+            </article>
+            <article class="info2">
+                <h5>Wie heist deine Firma?</h5>
+                <input class="Tinput" type="text" name="Name" required>
+            </article>
+            <article class="info2">
+                <h5>Was bietet deine Firma an?</h5>
+                <input class="Tinput" type="text" name="Angebot des Kunden" required>
+            </article>
+            <article class="info2">
+                <h5>Was ist besonders an deiner Firma?</h5>
+                <input class="Tinput" type="text" name="Besonderheiten des Kunden" required>
+            </article>
+            <article class="info2">
+                <h5>Hast du schon eine Webseite?</h5>
+                <article class="formTeil1">
+                    <article class="checkStyle1">
+                        <input type="checkbox" id="c1" onclick="Change()" name="Hat Farben" required oninvalid="this.setCustomValidity('Bitte gib deinen Namen ein')" oninput="setCustomValidity('')">
+                        <label id="d1" for="c1">
+                            <h5>nein</h5>
+                        </label>
+                    </article>
+                </article>
+            </article>
+            <article class="info2">
+                <h5>Welche social media Kan&aumlle hat deine Firma?</h5>
+                <input class="Tinput" type="text">
+            </article>
+            <article class="info2">
+                <h5>Unter welcher E-Mail k&oumlnnen wir dich erreichen?</h5>
+                <input class="Tinput" type="email">
+            </article>
+            <article class="info2 topSpace up">
+                <h4>Das Projekt</h4>
+            </article>
+            <article class="info2">
+                <h5>Hast du eine Farbpalette f&uumlr deine Webseite?</h5>
+                <article class="formTeil1">
+                    <article class="checkStyle1">
+                        <input type="checkbox" id="c2" onclick="Change()" name="Hat Farben" required oninvalid="this.setCustomValidity('Bitte gib deinen Namen ein')" oninput="setCustomValidity('')">
+                        <label id="d2" for="c2">
+                            <h5>nein</h5>
+                        </label>
+                    </article>
+                </article>
+            </article>
+            <article class="info2">
+                <h5>Hast du Schriftarten f&uumlr deine Webseite?</h5>
+                <article class="formTeil1">
+                    <article class="checkStyle1">
+                        <input type="checkbox" id="c3" onclick="Change()">
+                        <label id="d3" for="c3">
+                            <h5>nein</h5>
+                        </label>
+                    </article>
+                </article>
+            </article>
+            <article class="info2">
+                <h5>Hast du Bilder f&uumlr deine Webseite?</h5>
+                <article class="formTeil1">
+                    <article class="checkStyle1">
+                        <input type="checkbox" id="c4" onclick="Change()">
+                        <label id="d4" for="c4">
+                            <h5>nein</h5>
+                        </label>
+                    </article>
+                </article>
+            </article>
+            <article class="info2">
+                <h5>Hast du Texte f&uumlr deine Webseite?</h5>
+                <article class="formTeil1">
+                    <article class="checkStyle1">
+                        <input type="checkbox" id="c5" onclick="Change()">
+                        <label id="d5" for="c5">
+                            <h5>nein</h5>
+                        </label>
+                    </article>
+                </article>
+            </article>
+            <article class="info2">
+                <h5>Welches Buget planst f&uumlr das Projekt ein?</h5>
+                <input class="Tinput" type="text">
+            </article>
+            <article class="info2">
+                <h5>Welches Problem willst du mit einer professionellen Webseite l&oumlsen?</h5>
+                <input class="Tinput" type="text">
+            </article>
+            <article class="info2">
+                <h5>Wie w&uumlrde der Erfolg dieses Projekts f&uumlr dich aussehen?</h5>
+                <input class="Tinput" type="text">
+            </article>
+            <article class="info2 topSpace up">
+                <h4>Sonstige</h4>
+            </article>
+            <article class="info2">
+                <h5>Wie hast du von uns geh&oumlrt?</h5>
+                <input class="Tinput" type="text">
+            </article>
+            <article class="info2">
+                <h5>Gibt es Projekte, die dir besonders gut Gef&aumllen?</h5>
+                <article class="formTeil1">
+                    <article class="checkStyle1">
+                        <input type="checkbox" id="c6" onclick="Change()">
+                        <label id="d6" for="c6">
+                            <h5>nein</h5>
+                        </label>
+                    </article>
+                </article>
+            </article>
+            <article class="info2" id="mI6">
+                <h5>Welche?</h5>
+                <input class="Tinput" type="text">
+            </article>
+            <button type="submit" class="bt2">
+                <h6>Anfrage senden</h6>
+            </button>
+        </form>
+        <button id="fold1" onclick="fold(1)">
+            <i class="material-symbols-outlined arrow" style="font-size: 70px;" translate="no">expand_more</i>
+        </button>
+    </main>
+    <footer>
+        <article class="logo">
+            <h4>MAIJAN</h4>
+            <h5>Kunden</h5>
+        </article>
+        <aside class="links">
+            <a href="index.html#brandIntro" class="heading">Brand identity</a>
+            <a href="index.html">Farbenpatette</a>
+            <a href="index.html">Schriftarten</a>
+            <a href="index.htmlvibe">Vibe</a>
+            <a href="index.html">Erscheinungsbild</a>
+        </aside>
+        <aside class="links">
+            <a href="index.html#webIntro" class="heading">Webseiten</a>
+            <a href="index.html#custom">Individueller code</a>
+            <a href="index.html#responsive">Responsives design</a>
+            <a href="index.html#seo">SEO</a>
+            <a href="index.html#copy">Texte</a>
+            <a href="index.html#convert">Convert Optimierung</a>
+            <a href="index.html#manage">Management</a>
+        </aside>
+        <aside class="links">
+            <a href="index.html#brandIntro" class="heading">Rechtliches</a>
+            <a href="index.html">Impressum</a>
+            <a href="index.html">Datenschutz</a>
+            <a href="index.html">Lieferbedingungen</a>
+            <a href="index.html">Rechnungsbedingungen</a>
+        </aside>
+        <aside class="links">
+            <a href="index.html#brandIntro" class="heading">Social media</a>
+            <a href="index.html">Instagram</a>
+            <a href="index.html">TikTok</a>
+            <a href="index.html">Medium</a>
+            <a href="index.html"></a>
+        </aside>
+    </footer>
+</body>
+<script src="javascript/work.js"></script>
+<script src="javascript/clients.js"></script>
+<script src="javascript/cookie.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</html>

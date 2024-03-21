@@ -1,0 +1,107 @@
+
+
+#intro{
+    height: auto;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+#overfiew{
+    height: auto;
+    width: 80vw;
+    padding: 30px 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 5vw;
+        height: 2px;
+        width: 90vw;
+        background-color: var(--col-4-);
+    }
+}
+#projects{
+    height: auto;
+    width: 90vw;
+    padding: 30px 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 10px;
+
+    & .project{
+        position: absolute;
+        width: 480px;
+        aspect-ratio: 1 / 1;
+        margin: 0 10px;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        & .imageWrapper{
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+            overflow-y: auto;
+
+            & img{
+                width: 100%;
+                object-fit: cover;
+                pointer-events: none;
+
+                &.snap{
+                    height: 100%;
+                }
+            }
+        }
+        & .discription{
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            & h5{
+                font-weight: 500;
+            }
+            & h6{
+                color: var(--col-3-);
+            }
+        }
+        & > h6{
+            width: 100%;
+            color: var(--col-3-);
+        }
+        &.active{
+            position: relative;
+            display: flex;
+        }
+    }
+}
+
+
+
+
+
