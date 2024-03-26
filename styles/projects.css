@@ -64,7 +64,7 @@
             overflow: hidden;
             overflow-y: auto;
 
-            & img{
+            & .bImg{
                 width: 100%;
                 object-fit: cover;
                 pointer-events: none;
@@ -72,6 +72,12 @@
                 &.snap{
                     height: 100%;
                 }
+            }
+            & .logo{
+                position: absolute;
+                height: 50%;
+                pointer-events: none;
+                z-index: 10;
             }
         }
         & .discription{
@@ -97,6 +103,11 @@
         &.active{
             position: relative;
             display: flex;
+        }
+        &.cp{
+            & .imageWrapper{
+                overflow-y: hidden;
+            }
         }
     }
 }

@@ -3,47 +3,39 @@
     --col-2-: rgb(0, 0, 0);
     --col-3-: rgb(134, 134, 139);
     --col-4-: rgb(240, 240, 240);
-    --col-5-: rgb(18, 18, 18);
-    --col-6-: rgb(229, 128, 45);
-    --col-7-: rgb(185, 8, 230);
-    --col-8-: rgb(23, 106, 214);
-    --col-9-: rgb(98, 213, 48);
-    --col-6-2-: rgb(188, 76, 3);
-    --col-7-2-: rgb(127, 7, 158);
-    --col-8-2-: rgb(17, 67, 132);
-    --col-9-2-: rgb(1, 145, 42);
-    --col-6-3-: rgb(255, 184, 136);
-    --col-7-3-: rgb(228, 129, 253);
-    --col-8-3-: rgb(130, 180, 246);
-    --col-9-3-: rgb(109, 246, 148);
+    --col-5-: rgb(29, 29, 32);
+    --col-b1-: rgb(111, 111, 220);
+    --col-b2-: rgb(7, 7, 248);
+    --col-b3-: rgb(13, 13, 109);
+    --col-11-: rgb(243, 107, 10);
+    --col-12-: rgb(240, 55, 86);
+    --col-13-: rgb(7, 172, 7);
 
     --font-1-: "Kanit", sans-serif;
     --font-2-: "Roboto", sans-serif;
 
-    --sz-1-: 11.089rem;
+    --sz-1-: 9.089rem;
     --sz-2-: 6.854rem;
     --sz-3-: 4.236rem;
     --sz-4-: 2.618rem;
     --sz-5-: 1.618rem;
-    --sz-6-: 1.1rem;
-    --sz-7-: 0.90rem;
+    --sz-6-: 1.2rem;
+    --sz-7-: 0.95rem;
 }
 
 *{
     margin: 0;
     padding: 0;
-    color: var(--col-2-);
+    color: var(--col-5-);
 }
 html{
     height: auto;
     font-size: 13px;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 body{
     background-color: var(--col-1-);
     width: 100vw;
-    overflow-x: hidden;
 
     &::-webkit-scrollbar {
         display: none;
@@ -88,12 +80,20 @@ main{
 
     &.normal{
         height: auto;
-        padding: 10vh 0;
+        padding: 200px 0 120px 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         gap: 50px;
+    }
+}
+@media (max-width: 1024px){
+    main{
+    
+        &.normal{
+            padding: 150px 0 80px 0;
+        }
     }
 }
 .dark-background{
@@ -103,17 +103,11 @@ main{
         color: var(--col-4-);
     }
 }
-div{
-    z-index: 2;
-}
-img{
-    z-index: 2;
-}
 h1{
     font-size: var(--sz-1-);
-    font-family: var(--font-1-);
+    font-family: var(--font-2-);
     font-weight: 600;
-    line-height: 80%;
+    line-height: 110%;
 }
 h2{
     font-size: var(--sz-2-);
@@ -130,7 +124,7 @@ h3{
 h4{
     font-size: var(--sz-4-);
     font-family: var(--font-2-);
-    font-weight: 600;
+    font-weight: 400;
     line-height: 110%;
 }
 h5{
@@ -188,14 +182,14 @@ a{
         right: -110%;
         height: 110%;
         width: 110%;
-        background-color: var(--col-8-);
+        background-color: var(--col-b2-);
         z-index: 1;
         transition: all 500ms ease;
     }
     &:hover{
-        border: solid var(--col-8-) 1px;
-        -webkit-box-shadow: 0px 5px 6px -3px var(--col-8-), 5px 5px 15px 5px rgba(0,0,0,0); 
-        box-shadow: 0px 5px 6px -3px var(--col-8-), 5px 5px 15px 5px rgba(0,0,0,0);
+        border: solid var(--col-b2-) 1px;
+        -webkit-box-shadow: 0px 5px 6px -3px var(--col-b2-), 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 0px 5px 6px -3px var(--col-b2-), 5px 5px 15px 5px rgba(0,0,0,0);
 
         & *{
             color: var(--col-1-);
@@ -211,7 +205,7 @@ a{
             color: var(--col-1-);
         }
         &:hover{
-            border: solid var(--col-8-) 1px;
+            border: solid var(--col-b2-) 1px;
         }
     }
 }
@@ -240,14 +234,14 @@ a{
         right: -110%;
         height: 110%;
         width: 110%;
-        background-color: var(--col-8-);
+        background-color: var(--col-b1-);
         z-index: 1;
         transition: all 500ms ease;
     }
     &:hover{
-        border: solid var(--col-8-) 1px;
-        -webkit-box-shadow: 0px 5px 6px -3px var(--col-8-), 5px 5px 15px 5px rgba(0,0,0,0); 
-        box-shadow: 0px 5px 6px -3px var(--col-8-), 5px 5px 15px 5px rgba(0,0,0,0);
+        border: solid var(--col-b1-) 1px;
+        -webkit-box-shadow: 0px 5px 6px -3px var(--col-b1-), 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 0px 5px 6px -3px var(--col-b1-), 5px 5px 15px 5px rgba(0,0,0,0);
 
         & *{
             color: var(--col-1-);
@@ -263,7 +257,7 @@ a{
             color: var(--col-1-);
         }
         &:hover{
-            border: solid var(--col-8-) 1px;
+            border: solid var(--col-b1-) 1px;
         }
     }
 }
@@ -407,6 +401,26 @@ a{
         }
     }
 }
+.btB{
+    position: relative;
+    padding: 5px 15px;
+    border-radius: 25px;
+    background-color: var(--col-b2-);
+    border: solid var(--col-b2-) 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 500ms ease;
+
+    & *{
+        color: var(--col-4-);
+        font-weight: 400;
+        z-index: 3;
+        transition: all 500ms ease;
+    }
+}
 
 .reveal1, .reveal2, .reveal3{
     position: relative;
@@ -440,7 +454,7 @@ a{
 
 
 
-*.information1{
+*.infoW1{
     position: relative;
     height: auto;
     width: auto;
@@ -450,8 +464,8 @@ a{
     align-items: flex-start;
     flex-wrap: wrap;
     column-gap: 150px;
-    row-gap: 50px;
-
+    row-gap: 25px;
+    
     & *{
         color: var(--col-3-);
     }
@@ -459,15 +473,22 @@ a{
         flex: none;
         position: relative;
         width: 340px;
-        aspect-ratio: 3 / 4;
+        aspect-ratio: 9 / 16;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         overflow: hidden;
 
-        & img{
+        & .f{
+            height: 100%;
             width: 100%;
+            object-fit: cover;
+        }
+        & .c{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
         }
     }
     & .info1{
@@ -480,6 +501,9 @@ a{
         align-items: flex-start;
         gap: 35px;
 
+        & h2, h3{
+            font-weight: 700;
+        }
         & .group{
             position: relative;
             height: auto;
@@ -492,7 +516,7 @@ a{
         }
     }
 }
-*.information2{
+*.info2{
     position: relative;
     height: auto;
     width: 980px;
@@ -502,9 +526,6 @@ a{
     align-items: flex-start;
     gap: 35px;
 
-    & *{
-        color: var(--col-3-);
-    }
     & .group{
         position: relative;
         height: auto;
@@ -515,8 +536,11 @@ a{
         align-items: flex-start;
         gap: 5px;
     }
+    & h4, h5, h6{
+        color: var(--col-3-);
+    }
 }
-*.information3{
+*.infoW3{
     position: relative;
     height: auto;
     width: auto;
@@ -525,15 +549,16 @@ a{
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    column-gap: 30px;
-
+    column-gap: 80px;
+    row-gap: 35px;
+    
     & *{
         color: var(--col-3-);
     }
     & .pic{
         flex: none;
         position: relative;
-        width: 400px;
+        width: 450px;
         aspect-ratio: 3 / 4;
         display: flex;
         flex-direction: column;
@@ -544,13 +569,16 @@ a{
     & .info1{
         position: relative;
         height: auto;
-        width: 400px;
+        width: 450px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 35px;
 
+        & h2, h3{
+            font-weight: 700;
+        }
         & .group{
             position: relative;
             height: auto;
@@ -565,41 +593,24 @@ a{
 }
 *.bigPic{
     flex: none;
-        position: relative;
-        width: 980px;
-        aspect-ratio: 16 / 8;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-}
-@media (max-width: 1024px){
-    *.bigPic{
-        width: 90vw;
-    }
-}
-*.info1{
     position: relative;
-    height: auto;
-    width: 340px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-*.info2{
-    position: relative;
-    height: auto;
     width: 980px;
+    aspect-ratio: 16 / 9;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
-    & h6{
-        color: var(--col-3-);
-        text-transform: uppercase;
+    & .f{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    & .c{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
     }
 }
 *.picWrap2{
@@ -822,9 +833,11 @@ a{
         }
     }
 }
-
 @media (max-width: 1024px){
-    *.information1{
+    *.bigPic{
+        width: 90vw;
+    }
+    *.infoW1{
         & .pic{
             width: 90vw;
             aspect-ratio: 4 / 3;
@@ -833,22 +846,16 @@ a{
             width: 90vw;
         }
     }
-    *.information2{
-        width: 90vw;
-    }
-    *.information3{
-        & .pic{
-            width: 40vw;
-        }
-        & .info1{
-            width: 40vw;
-        }
-    }
-    *.info1{
-        width: 40vw;
-    }
     *.info2{
         width: 90vw;
+    }
+    *.infoW3{
+        & .pic{
+            width: 90vw;
+        }
+        & .info1{
+            width: 90vw;
+        }
     }
     *.picWrap2{
         & .pic{
@@ -856,6 +863,7 @@ a{
         }
     }
 }
+
 
 .backgroundImg{
     position: absolute;
@@ -865,95 +873,30 @@ a{
 }
 
 *.colorFull1{
-    background: linear-gradient(90deg, var(--col-6-) 10%,var(--col-7-) 50%, var(--col-8-) 90%);
+    background: linear-gradient(135deg, var(--col-11-) 10%,var(--col-12-) 50%, var(--col-b2-) 90%);
     color: transparent;
     background-clip: text;
     pointer-events: none;
 }
 *.colorFull2{
-    background: linear-gradient(90deg, var(--col-8-) 10%,var(--col-7-) 50%, var(--col-6-) 90%);
+    background: linear-gradient(135deg, var(--col-11-) 10%,var(--col-12-) 50%, var(--col-b2-) 90%);
     color: transparent;
     background-clip: text;
     pointer-events: none;
 }
-*.colorFull3{
-    background: linear-gradient(135deg, var(--col-6-) 40%, var(--col-6-2-) 70%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull4{
-    background: linear-gradient(135deg, var(--col-7-3-) 40%, var(--col-7-) 80%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull45{
-    background: linear-gradient(135deg, var(--col-7-) 0%, var(--col-7-3-) 50%, var(--col-7-) 100%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull5{
-    background: linear-gradient(135deg, var(--col-8-3-) 40%, var(--col-8-) 70%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull55{
-    background: linear-gradient(135deg, var(--col-8-) 0%, var(--col-8-3-) 50%, var(--col-8-) 100%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull6{
-    background: linear-gradient(135deg, var(--col-6-2-) 40%, var(--col-6-) 70%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull7{
-    background: linear-gradient(135deg, var(--col-7-2-) 40%, var(--col-7-) 70%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull8{
-    background: linear-gradient(135deg, var(--col-8-2-) 40%, var(--col-8-) 70%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull9{
-    background: linear-gradient(135deg, var(--col-9-) 40%, var(--col-9-2-) 70%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull10{
-    background: linear-gradient(135deg, var(--col-9-2-) 40%, var(--col-9-) 70%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
-*.colorFull11{
-    background: linear-gradient(135deg, var(--col-8-) 40%, var(--col-9-) 70%);
+*.colorFullB{
+    background: linear-gradient(135deg, var(--col-b1-) 10%,var(--col-b2-) 50%, var(--col-b3-) 90%);
     color: transparent;
     background-clip: text;
     pointer-events: none;
 }
 *.colorFullC1{
-    background: radial-gradient(circle at 50% 10%, var(--col-4-) 10%, var(--col-5-) 100%);
+    background: radial-gradient(circle at 50% 10%, var(--col-1-) 10%, var(--col-2-) 100%);
     color: transparent;
     background-clip: text;
     pointer-events: none;
 }
-*.colorFullC3{
-    background: radial-gradient(circle at 50% 10%, var(--col-7-) 10%, var(--col-2-) 100%);
-    color: transparent;
-    background-clip: text;
-    pointer-events: none;
-}
+
 
 
 header{
