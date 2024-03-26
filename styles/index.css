@@ -25,12 +25,15 @@
     overflow: hidden;
 
     & .fonts{
+        flex: none;
+        flex-wrap: nowrap;
         padding: 20px 0;
         margin-left: 0;
         background-color: var(--col-5-);
 
         & *{
             flex: none;
+            flex-wrap: nowrap;
         }
         
         &:nth-child(2){
@@ -40,11 +43,15 @@
             animation: scroll2 20s linear infinite;
 
             & *{
-                font-family: var(--font-1-);
+                font-family: "Exo 2", sans-serif;
             }
         }
         &:nth-child(4){
             animation: scroll1 20s linear infinite;
+
+            & *{
+                font-family: var(--font-1-);
+            }
         }
     }
 }
@@ -600,7 +607,7 @@
         & i{
     
             &.one{
-                bottom: 5%;
+                bottom: -5%;
             }
             &.two{
                 bottom: 0%;
