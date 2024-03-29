@@ -539,6 +539,11 @@ a{
     & h4, h5, h6{
         color: var(--col-3-);
     }
+    &.informational{
+        & *{
+            color: var(--col-2-);
+        }
+    }
 }
 *.infoW3{
     position: relative;
