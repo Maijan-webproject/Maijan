@@ -41,6 +41,22 @@
             <h2 class="colorFullC1">MAIJAN</h2>
         </article>
     </main>
+    <main id="conForm">
+        <form action="https://formspree.io/f/myyqvdgd" method="POST" id="f0">
+            <article class="info2">
+                <h3>Schreib uns schnell und einfach.</h3>
+            </article>
+            <article class="info2">
+                <input class="Tinput" type="text" name="Name" placeholder="Wie heist dein Unternehmen?" required>
+            </article>
+            <article class="info2">
+                <input class="Tinput" type="text" name="E-Mail" placeholder="Wie können wir dich erreichen?" required>
+            </article>
+            <button type="submit" class="bt2">
+                <h6>Senden</h6>
+            </button>
+        </form>
+    </main>
     <main id="inForm">
         <form action="https://formspree.io/f/myyqvdgd" method="POST" id="f1">
             <article class="info2">
@@ -66,7 +82,7 @@
                 <h5>Hast du schon eine Webseite?</h5>
                 <article class="formTeil1">
                     <article class="checkStyle1">
-                        <input type="checkbox" id="c1" onclick="Change()" name="Hat Farben" required oninvalid="this.setCustomValidity('Bitte gib deinen Namen ein')" oninput="setCustomValidity('')">
+                        <input type="checkbox" id="c1" onclick="Change()" name="Hat Webseite">
                         <label id="d1" for="c1">
                             <h5>nein</h5>
                         </label>
@@ -75,11 +91,11 @@
             </article>
             <article class="info2">
                 <h5>Welche social media Kan&aumlle hat deine Firma?</h5>
-                <input class="Tinput" type="text">
+                <input class="Tinput" type="text" name="Sociel media">
             </article>
             <article class="info2">
                 <h5>Unter welcher E-Mail k&oumlnnen wir dich erreichen?</h5>
-                <input class="Tinput" type="email">
+                <input class="Tinput" type="email" required name="E-mail">
             </article>
             <article class="info2 topSpace up">
                 <h4>Das Projekt</h4>
@@ -88,7 +104,7 @@
                 <h5>Hast du eine Farbpalette f&uumlr deine Webseite?</h5>
                 <article class="formTeil1">
                     <article class="checkStyle1">
-                        <input type="checkbox" id="c2" onclick="Change()" name="Hat Farben" required oninvalid="this.setCustomValidity('Bitte gib deinen Namen ein')" oninput="setCustomValidity('')">
+                        <input type="checkbox" id="c2" onclick="Change()" name="Hat Farben">
                         <label id="d2" for="c2">
                             <h5>nein</h5>
                         </label>
@@ -99,7 +115,7 @@
                 <h5>Hast du Schriftarten f&uumlr deine Webseite?</h5>
                 <article class="formTeil1">
                     <article class="checkStyle1">
-                        <input type="checkbox" id="c3" onclick="Change()">
+                        <input type="checkbox" id="c3" onclick="Change()" name="Hat Schriftarten">
                         <label id="d3" for="c3">
                             <h5>nein</h5>
                         </label>
@@ -110,7 +126,7 @@
                 <h5>Hast du Bilder f&uumlr deine Webseite?</h5>
                 <article class="formTeil1">
                     <article class="checkStyle1">
-                        <input type="checkbox" id="c4" onclick="Change()">
+                        <input type="checkbox" id="c4" onclick="Change()" name="Hat Bilder">
                         <label id="d4" for="c4">
                             <h5>nein</h5>
                         </label>
@@ -121,7 +137,7 @@
                 <h5>Hast du Texte f&uumlr deine Webseite?</h5>
                 <article class="formTeil1">
                     <article class="checkStyle1">
-                        <input type="checkbox" id="c5" onclick="Change()">
+                        <input type="checkbox" id="c5" onclick="Change()" name="Hat Texte">
                         <label id="d5" for="c5">
                             <h5>nein</h5>
                         </label>
@@ -130,28 +146,28 @@
             </article>
             <article class="info2">
                 <h5>Welches Buget planst f&uumlr das Projekt ein?</h5>
-                <input class="Tinput" type="text">
+                <input class="Tinput" type="text" required name="Buget">
             </article>
             <article class="info2">
                 <h5>Welches Problem willst du mit einer professionellen Webseite l&oumlsen?</h5>
-                <input class="Tinput" type="text">
+                <input class="Tinput" type="text" required name="Problem das gelöst werden soll">
             </article>
             <article class="info2">
                 <h5>Wie w&uumlrde der Erfolg dieses Projekts f&uumlr dich aussehen?</h5>
-                <input class="Tinput" type="text">
+                <input class="Tinput" type="text" name="Wie sieht Erfolg aus">
             </article>
             <article class="info2 topSpace up">
                 <h4>Sonstige</h4>
             </article>
             <article class="info2">
                 <h5>Wie hast du von uns geh&oumlrt?</h5>
-                <input class="Tinput" type="text">
+                <input class="Tinput" type="text" name="Von mir gehört über...">
             </article>
             <article class="info2">
                 <h5>Gibt es Projekte, die dir besonders gut Gef&aumllen?</h5>
                 <article class="formTeil1">
                     <article class="checkStyle1">
-                        <input type="checkbox" id="c6" onclick="Change()">
+                        <input type="checkbox" id="c6" onclick="Change()" name="beliebte Projekte">
                         <label id="d6" for="c6">
                             <h5>nein</h5>
                         </label>
@@ -160,7 +176,7 @@
             </article>
             <article class="info2" id="mI6">
                 <h5>Welche?</h5>
-                <input class="Tinput" type="text">
+                <input class="Tinput" type="text" name="Projekte die gefallen">
             </article>
             <button type="submit" class="bt2">
                 <h6>Anfrage senden</h6>
