@@ -600,6 +600,14 @@
         }
         & .info2{
             width: 90vw;
+
+            & h4{
+                width: 95%;
+                padding: 0 15px;
+            }
+            &::after{
+                width: 3px;
+            }
         }
     }
     #manage{
