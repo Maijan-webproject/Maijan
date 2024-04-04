@@ -372,6 +372,7 @@
             color: var(--col-4-);
         }
         & .info2{
+            position: relative;
             width: 600px;
             gap: 80px;
 
