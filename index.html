@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIJAN webproject | Webseiten mit Management</title>
+    <meta name="description" content="Webseiten der nächsten Generation und einfaches Management für nachhaltiges Unternehmenswachstum.">
+    <meta name="keywords" content="webdesigner, webentwicklung, webdesigner kassel, webentwicklung kassel, webdesigner wolfhagen, webentwicklung wolfhagen, webseiten kassel, webseiten wolfhagen">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body onload="land()">
+    <header>
+        <section class="hHolder">
+            <a href="index.html">Webseiten</a>
+            <a href="evoke.html">Infos</a>
+            <a href="https://forms.gle/zEe2gyT4KaYbxc9B7" class="b">Kontakt</a>
+        </section>
+        <aside class="logo">
+            <h5>IJ</h5>
+        </aside>
+        <button id="Hswicher" onclick="hSwitch(0)">
+            <i class="material-symbols-outlined" style="font-size: 25px; margin-right: -10px;" translate="no">menu</i>
+        </button>
+        <section id="sM">
+            <article>
+                <a class="menIt" style="transition-delay: 500ms;" href="index.html">Webseiten</a>
+                <a class="menIt" style="transition-delay: 600ms;" href="evoke.html">Infos</a>
+                <a class="menIt" style="transition-delay: 650ms;" href="https://forms.gle/zEe2gyT4KaYbxc9B7">Kontakt</a>
+            </article>
+            <article>
+                <a class="menIt" style="transition-delay: 700ms;" href="">Vorteile</a>
+                <a class="menIt" style="transition-delay: 750ms;" href="">Features</a>
+                <a class="menIt" style="transition-delay: 850ms;" href="">Ablauf</a>
+                <a class="menIt" style="transition-delay: 900ms;" href="">Q&A</a>
+                <a class="menIt" style="transition-delay: 950ms;" href="">Socials</a>
+            </article>
+            <button id="Hswicher2" onclick="hSwitch(1)">
+                <i class="material-symbols-outlined" style="font-size: 25px; margin-right: -10px;" translate="no">close</i>
+            </button>
+        </section>
+        <section id="cookieBanner">
+            <section class="banner">
+                <article>
+                    <aside>
+                        <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">cookie</i>
+                        <h3>Cookies</h3>
+                    </aside>
+                    <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis molestiae eum eveniet totam possimus nemo error omnis, voluptatibus quam saepe quos, a neque facilis atque maxime eaque ad minima quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt quam, doloribus mollitia possimus delectus eum harum. Vitae quis repudiandae error totam, velit porro, eveniet tempore dicta quos, perferendis neque!</h6>
+                </article>
+                <article>
+                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nobis totam! Praesentium eaque minus sequi ullam vel, ipsum non voluptates, atque magnam ad corporis, vitae illum accusamus porro. Nisi, quam!</h6>
+                </article>
+                <aside>
+                    <button class="bt1" id="cookie-btn1">
+                        <h6>Alle Cookies zulassen</h6>
+                    </button>
+                    <button class="bt2" id="cookie-btn2">
+                        <h6>Nur essenzielle Cookies zulassen</h6>
+                    </button>
+                </aside>
+            </section>
+        </section>
+    </header>
+    <main id="topBar">
+        <section class="bar">
+            <a href="index.html#assets" class="tBarItem" style="transition-delay: 0.3s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">trending_up</i>
+                <p>Vorteile</p>
+            </a>
+            <a href="index.html#features" class="tBarItem" style="transition-delay: 0.4s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">stat_3</i>
+                <p>Features</p>
+            </a>
+            <a href="evoke.html#ablauf" class="tBarItem" style="transition-delay: 0.6s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">share</i>
+                <p>Ablauf</p>
+            </a>
+            <a href="evoke.html#faq" class="tBarItem" style="transition-delay: 0.7s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">chat</i>
+                <p>Q&A</p>
+            </a>
+            <a href="index.html#bigPic2" class="tBarItem" style="transition-delay: 0.8s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">group</i>
+                <p>Socials</p>
+            </a>
+        </section>
+        <section class="bCont">
+            <p>Bleib immer auf dem Laufenden und folg uns auf</p>
+            <a href="https://www.instagram.com/maijan.webproject/" class="b">Instagram</a>
+        </section>
+    </main>
+    <main id="hero">
+        <section class="info">
+            <article class="b">
+                <h2>Webseiten</h2>
+            </article>
+            <article class="s">
+                <h5>Gemacht, <br> um den Unterschied zu machen.</h5>
+            </article>
+        </section>
+        <section id="vid">
+            <video autoplay loop muted webkit-playsinline playsinline id="openVideo" src="images/vid.mp4"></video>
+        </section>
+    </main>
+    <main id="pro">
+        <section class="info" style="align-items: flex-start;">
+            <article class="s">
+                <h6>perfektion mit Sinn und Zweck</h6>
+            </article>
+            <article class="m">
+                <h4 style="font-weight: 300;">Weil auch dein Unternehmen die beste Webseite verdient, bieten wir individuelle und einzigartige Designs, professionelle Entwicklung und lückenloses Management damit du sorglos in die Zukunft schauen kannst.</h4>
+            </article>
+        </section>
+    </main>
+    <main id="asets">
+        <section class="info">
+            <article>
+                <h3>Vorteile, <br> die dir wirklich helfen.</h3>
+            </article>
+        </section>
+        <section id="asetContainer">
+            <a class="aItems">
+                <img class="i" src="images/3.webp" alt="">
+                <article class="w">
+                    <h6 style="color: var(--col-1-);">Online zug&auml;nglich</h6>
+                    <h4>Ist immer genau da, <br> wo du bist.</h4>
+                </article>
+            </a>
+            <a class="aItems b">
+                <article class="w">
+                    <h6>Einzigartig Designed und Entwickelt</h6>
+                    <h4>Immer einzigartig, <br> eben ganz du selbst.</h4>
+                </article>
+                <i class="material-symbols-outlined a8" style="font-size: 400px" translate="no">fingerprint</i>
+            </a>
+            <a class="aItems o">
+                <img src="images/profi.webp" alt="" class="a2">
+                <article class="w">
+                    <h6 style="color: var(--col-1-);">Einzigartig Designed und Entwickelt</h6>
+                    <h4>Immer einzigartig, <br> eben ganz du selbst.</h4>
+                </article>
+            </a>
+            <a class="aItems">
+                <img src="images/m3.png" alt="" class="a1">
+                <article>
+                    <h6>Informationen f&uuml;r jeden</h6>
+                    <h4>Immer eine Antwort <br> auf deine Fragen.</h4>
+                </article>
+            </a>
+            <a class="aItems w">
+                <img src="images/qr.png" alt="" class="a5">
+                <article>
+                    <h6>QR Codes</h6>
+                    <h4>Super schnell, <br> genau auf deiner Domain.</h4>
+                </article>
+            </a>
+            <a class="aItems bl">
+                <i class="material-symbols-outlined" style="font-size: 240px;" translate="no">settings</i>
+                <article>
+                    <h6 style="color: var(--col-2-);">Management</h6>
+                    <h4>Ohne Probleme, <br> sorglos online.</h4>
+                </article>
+            </a>
+            <a class="aItems">
+                <img src="images/m5.png" alt="" class="a3">
+                <article>
+                    <h6>Angeboten und Events</h6>
+                    <h4>Mit aktuellen Veranstaltungen immer up to date.</h4>
+                </article>
+            </a>
+        </section>
+        <section class="swicher">
+            <button onclick="swicher(2, 0)">
+                <i class="material-symbols-outlined" style="font-size: 25px; margin-right: -10px;" translate="no">arrow_back_ios</i>
+            </button>
+            <button onclick="swicher(2, 1)">
+                <i class="material-symbols-outlined" style="font-size: 25px; margin-left: 3px;" translate="no">arrow_forward_ios</i>
+            </button>
+        </section>
+    </main>
+    <main id="wp" class="reveal3">
+        <article>
+            <h6>Das Webprojekt</h6>
+            <h4 style="font-family: var(--font-1-); font-weight: 300;">Weil auch dein Unternehmen die beste Webseite verdient, bieten wir individuelle und einzigartige Designs, professionelle Entwicklung und l&uuml;ckenloses Management damit du sorglos in die Zukunft schauen kannst.</h4>
+        </article>
+    </main>
+    <main id="ij">
+        <section class="info">
+            <article>
+                <h3>Vorteile, <br> die dir wirklich helfen.</h3>
+            </article>
+        </section>
+        <section class="container">
+            <video autoplay muted webkit-playsinline playsinline src="images/vid2.mp4"></video>
+            <section class="info2">
+                <article>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ullam quisquam inventore unde magni voluptatum sapiente itaque? Laborum tempore saepe accusamus asperiores aliquam eos, recusandae quis commodi distinctio. Repudiandae, perspiciatis.</h5>
+                </article>
+            </section>
+        </section>
+    </main>
+    <main id="alternative2">
+        <section class="info reveal3">
+            <article>
+                <h3>Eine Alternative, <br> die auch gefallen wird.</h3>
+            </article>
+        </section>
+        <section class="container reveal3">
+            <article class=" alt ot">
+                <article class="a1">
+                    <h6>Deine beste Werbung.</h6>
+                    <i class="material-symbols-outlined" style="font-size: 25px;" translate="no">campaign</i>
+                </article>
+                <img src="images/1.webp" alt="">
+            </article>
+            <article class=" alt ws">
+                <article class="text">
+                    <h6>Sichere dir Vertrauen.</h6>
+                    <h4>Genau so professionell <br> wie du.</h4>
+                    <div class="aHolder">
+                        <a href="https://forms.gle/zEe2gyT4KaYbxc9B7" class="b">jetzt Angfragen</a>
+                    </div>
+                </article>
+                <img src="images/m1.webp" alt="" class="m1">
+            </article>
+        </section>
+    </main>
+    <main id="features">
+        <section class="info reveal3">
+            <article>
+                <h3>Mit allen Features, <br> die du wircklich brauchst.</h3>
+            </article>
+        </section>
+        <section id="featContainer" class="reveal3">
+            <article class="fItems design basic" style="transition-delay: 0.4s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">fingerprint</i>
+                <h5>Immer genau auf dich angepasst.</h5>
+                <h6>Jede Webseite wird individuell f&uuml;r dein Unternehmen gestaltet und du erh&auml;ltst ein einzigartiges Design, das perfekt zu deinem Unternehmen passt.</h6>
+            </article>
+            <article class="fItems design basic" style="transition-delay: 0.5s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">devices</i>
+                <h5>Wunderschön auf allen Geräten.</h5>
+                <h6>Egal ob Desktop, Tablet oder Smartphone – deine Seite läuft schnell und reibungslos.</h6>
+            </article>
+            <article class="fItems design basic" style="transition-delay: 0.6s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">shop</i>
+                <h5>F&uuml;r den Verkauf gemacht.</h5>
+                <h6>Wir gestalten deine Webseite so, dass sie deine Verkaufsziele unterstützt und deine Conversion-Rate maximiert.</h6>
+            </article>
+            <article class="fItems design" style="transition-delay: 0.7s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">style</i>
+                <h5>bis zu 3 Designs</h5>
+                <h6>Du erhältst verschiedene Designvorschläge, aus denen du wählen kannst. So findest du garantiert das perfekte Layout für deine Webseite.</h6>
+            </article>
+            <article class="fItems design" style="transition-delay: 0.8s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">select_window</i>
+                <h5>Unbegrenzte Seiten</h5>
+                <h6>Es gibt keine Begrenzung – deine Webseite wächst mit deinem Unternehmen.</h6>
+            </article>
+            <article class="fItems design" style="transition-delay: 0.9s;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">target</i>
+                <h5>Zielgruppenorientiert</h5>
+                <h6>Deine Webseite wird genau auf deine Zielgruppe angepasst und spricht genau die Kunden an, die du erreichen möchtest.</h6>
+            </article>
+            <article class="fItems dev basic">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">accessibility</i>
+               <h5>Optimiert für Nutzer.</h5>
+               <h6>Benutzerfreundlichkeit wird bei uns immer groß geschrieben. Deine Webseite wird so gestaltet, dass sie intuitiv und einfach zu bedienen ist.</h6>
+            </article>
+            <article class="fItems dev basic">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">touch_app</i>
+                <h5>Interaktive Inhalte.</h5>
+                <h6>Begeistere deine Besucher mit interaktiven Inhalten, die zum Verweilen und Entdecken einladen.</h6>
+            </article>
+            <article class="fItems dev basic">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">contact_mail</i>
+                <h5>Kontaktformular.</h5>
+                <h6>Damit deine Kunden dich einfach und schnell erreichen können, bekommt deine Webseite ein benutzerfreundliches Kontaktformular. </h6>
+            </article>
+            <article class="fItems dev basic">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">cached</i>
+               <h5>Gemacht für schnelle Ladezeiten.</h5>
+               <h6>Schnelle Ladezeiten sind entscheidend. Wir sorgen dafür, dass deine Webseite blitzschnell geladen wird.</h6>
+           </article>
+            <article class="fItems dev">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">cookie</i>
+                <h5>Einstellbare Cookies.</h5>
+                <h6>Biete deinen Besuchern die Möglichkeit, ihre Cookie-Einstellungen individuell anzupassen und sorge so für Transparenz und Vertrauen.</h6>
+            </article>
+            <article class="fItems dev">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">travel_explore</i>
+               <h5>Optimiert für Suchmaschinen.</h5>
+               <h6>Unsere Webseiten sind für Suchmaschinen optimiert, damit du bei Google & Co. besser gefunden wirst.</h6>
+            </article>
+            <article class="fItems manage basic">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">language</i>
+                <h5>Immer sorglos online.</h5>
+                <h6>Mit der Online-Garantie ist sichergestellt, das deine Webseite jederzeit erreichbar ist und deine Kunden rund um die Uhr unterstützt.</h6>
+            </article>
+            <article class="fItems manage basic">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">shield</i>
+                <h5>Sicheres Hosting.</h5>
+                <h6>Deine Webseite wird auf sicheren Servern gehostet, um maximale Sicherheit und Verfügbarkeit zu gewährleisten.</h6>
+            </article>
+            <article class="fItems manage basic">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">browser_updated</i>
+                <h5>Kontrollen und Updates.</h5>
+                <h6>Regelmäßige Kontrollen und Updates halten deine Webseite stets auf dem neuesten Stand und gewährleisten eine reibungslose Funktion.</h6>
+            </article>
+            <article class="fItems manage">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">sync_problem</i>
+                <h5>Monitoring / Bugfixes.</h5>
+                <h6>Deine Webseite wird kontinuierlich überwacht und wir beheben eventuelle Fehler schnell und zuverlässig.</h6>
+            </article>
+            <article class="fItems manage">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">jump_to_element</i>
+                <h5>neue Domain.</h5>
+                <h6>Wir helfen dir bei der Registrierung und Einrichtung einer neuen Domain, die perfekt zu deinem Unternehmen passt.</h6>
+            </article>
+            <article class="fItems manage">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">brand_awareness</i>
+                <h5>Events und Ankündigungen.</h5>
+                <h6>Kündige bevorstehende Events und Veranstaltungen direkt auf deiner Webseite an und halte deine Kunden immer auf dem neusten Stand.</h6>
+            </article>
+            <article class="fItems manage">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">news</i>
+                <h5>News.</h5>
+                <h6>Damit deine Kunden die neusten Ankündigungen und News nicht verpassen, kannst du diese monatlich direkt auf deiner Webseite anzeigen.</h6>
+            </article>
+            <article class="fItems feat basic">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">forum</i>
+                <h5>R&uuml;ckmeldungen.</h5>
+                <h6>Während des gesamten Entwicklungsprozesses kannst du mitbestimmen, welche Designs am besten zu deinem Auftritt passen.</h6>
+            </article>
+            <article class="fItems feat" style="margin-right: 5vw;">
+                <i class="material-symbols-outlined" style="font-size: 50px;" translate="no">qr_code_2</i>
+                <h5>QR Codes.</h5>
+                <h6>Nach dem Projekt bekommst du einen QR-Code, der zu deiner Webseite oder deiner Speisekarte führt. Diesen kannst du dann frei auf Visitenkarten, Flyer oder anderen Dingen verwenden.</h6>
+            </article>
+        </section>
+        <section class="swicher">
+            <button onclick="swicher(0, 0)">
+                <i class="material-symbols-outlined" style="font-size: 25px; margin-right: -10px;" translate="no">arrow_back_ios</i>
+            </button>
+            <button onclick="swicher(0, 1)">
+                <i class="material-symbols-outlined" style="font-size: 25px; margin-left: 3px;" translate="no">arrow_forward_ios</i>
+            </button>
+        </section>
+    </main>
+    <main id="bigPic2">
+        <section class="info reveal3">
+            <article>
+                <h3>Bleib connected <br> und immer up to date.</h3>
+            </article>
+        </section>
+        <section class="pic reveal3">
+            <img src="images/13.webp" alt="">
+            <article>
+                <h4>Folg uns jetzt auf Instagram.</h4>
+                <h6>Sei immer hautnah dabei.</h6>
+                <a href="https://www.instagram.com/maijan.webproject/" class="bt1">
+                    <h6>Jetzt Folgen</h6>
+                </a>
+            </article>
+        </section>
+    </main>
+    <main id="alternative">
+        <section class="info reveal3">
+            <article>
+                <h3>Eine Alternative, <br> die auch gefallen wird.</h3>
+            </article>
+        </section>
+        <section class="container reveal3">
+            <article class=" alt sk">
+                <article class="text">
+                    <p>individueller Preis</p>
+                    <h4>digitale Speisekarten</h4>
+                    <h6>Zeig der Welt deine Gerichte.</h6>
+                    <div class="aHolder">
+                        <a href="https://forms.gle/zEe2gyT4KaYbxc9B7" class="b">jetzt Ansehen</a>
+                        <a href="https://forms.gle/zEe2gyT4KaYbxc9B7" class="b">Angfragen</a>
+                    </div>
+                </article>
+                <img src="images/m3.png" alt="">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <article>
+                <h3 class="f1 colorFull1">MAIJAN webproject</h3>
+            </article>
+        </section>
+        <section>
+            <article class="big">
+                <a href="index.html" class="hl">Webseiten</a>
+                <a href="index.html#asets">Vorteile</a>
+                <a href="index.html#features">Features</a>
+                <a href="evoke.html" class="hl spTop">Infos</a>
+                <a href="evoke.html#ablauf">Ablauf</a>
+                <a href="evoke.html#faq">FAQ</a>
+                <a href="evoke.html">News</a>
+            </article>
+            <article>
+                <p class="hl">Socials</p>
+                <a href="https://www.instagram.com/maijan.webproject/">Instagram</a>
+                <a href="https://www.tiktok.com/@maijan.project?lang=de-DE">TikTok</a>
+            </article>
+            <article>
+                <p class="hl">Wir sind f&uuml;r dich da:</p>
+                <a href="https://forms.gle/zEe2gyT4KaYbxc9B7">Anfragen</a>
+                <a href=mailto:“maijan.webproject@gmail.com”>Frag nach -></a>
+            </article>
+        </section>
+        <aside>
+            <a href="id.html#impressum">Impressum</a>
+            <a href="id.html#datenschutz">Datenschutz</a>
+        </aside>
+    </footer>
+</body>
+<script src="javascript/work.js"></script>
+<script src="javascript/cookie.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</html>
